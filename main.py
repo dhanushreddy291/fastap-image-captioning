@@ -10,7 +10,7 @@ class Image(BaseModel):
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return {"message": "Hello from Docker 🐳"}
 
 @app.post("/image_to_text")
 async def image_to_text(image: Image):
